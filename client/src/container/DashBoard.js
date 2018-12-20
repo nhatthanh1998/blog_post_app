@@ -31,10 +31,7 @@ font-size:7rem;
 -webkit-clip-path: circle(50% at 50% 50%);
 clip-path: circle(50% at 50% 50%);
 margin:7rem;
-background-color:"red"
-
-
-
+background-color:"red";
 `
 
 
@@ -59,8 +56,7 @@ export default class DashBoard extends React.Component{
                 <div className="row" style = {{marginTop:"5rem",opacity:".8"}}>
                 <BlogCard />
                 </div>
-
-                <ADDBUTTON><i class="fas fa-plus-circle" style={{color:"red"}}></i></ADDBUTTON>
+                <ADDBUTTON href="/newblog"><i class="fas fa-plus-circle" style={{color:"green"}}></i></ADDBUTTON>
                 </Intro>
         )
     }

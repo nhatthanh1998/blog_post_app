@@ -9,13 +9,7 @@ export default class BlogCard extends React.Component{
         return (
             <div className = "container" style={{maxWidth:"150rem"}}>
                 <div className="row">
-                <Query query={ALL_BLOG}
-                 variables={{
-                    offset: 0,
-                    limit: 5
-                  }}
-                  fetchPolicy="cache-and-network"
-                >
+                <Query query={ALL_BLOG}>
                 {
                     ({error,loading,data})=>{
                         if(error){
@@ -67,5 +61,3 @@ export default class BlogCard extends React.Component{
         )
     }
 }
-
-

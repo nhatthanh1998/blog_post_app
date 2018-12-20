@@ -1,10 +1,7 @@
 import gql from 'graphql-tag'
-
-
-
 export const CREATE_BLOG = gql`
 mutation create_blog($title:String,$content:String){
-    createBlog(title:$title,context:$content){
+    createBlog(title:$title,content:$content){
         _id
         title
         createdAt
